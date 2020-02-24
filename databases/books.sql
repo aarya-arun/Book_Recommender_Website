@@ -3,7 +3,7 @@ CREATE TABLE books(
 											title varchar(250),
 											author varchar(300),
 											genre int,
-											avgrating float,
+											avg_rating float,
 											price float,
 											publisher varchar(300),
 											year int,
@@ -15,56 +15,39 @@ CREATE TABLE books(
 											primary key(isbn)
 											
 										);
-											
-											
-CREATE TABLE user(
+										
+										
+										
+CREATE TABLE book_reviews(
+	
+	isbn int,
+	username varchar(250),  ///
+	review varchar (5000)
+	
+	);
+	
+CREATE TABLE book_websites(
+	
+	isbn int,
+	website varchar(100)
+	
+	);
+	
+CREATE TABLE shelves(
+	
+	shelfid int,
+	isbn int,
+	status varchar(10),
+	user_rating float
+	
+	);
+	
+	
+	
 
-											username varchar(250),
-											emailid varchar(250),
-											password varchar(40),
-											shelfid int,
-											avgrating int,
 											
 											
-											
-											
-									);
 									
-
-CREATE TABLE tenfavbooks (
-
-														username varchar(250),
-														isbn int,
-														
-														
-													);
-													
-													
-CREATE TABLE top5genres (
-
-														username varchar (250),
-														genreid int
-									
-
-
-
-
-
-
-											Users:
-Username
-Password
-Avg rating
-Shelves
-Top 10 fav books
-Top 5 genres --
-Top 5 favourite authors---
-Friends---
-Reviews---
-
-											
-											
-											
 											
 											Title
 Author
