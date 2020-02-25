@@ -6,7 +6,9 @@ CREATE TABLE user(
 											shelf_id int,
 											avg_rating int,
 											
-											
+											primary key (username),
+                                                                                        unique(email_id),
+                                                                                        unique(shelf_id)
 											
 											
 									);
@@ -14,25 +16,25 @@ CREATE TABLE user(
 
 CREATE TABLE tenfavbooks (
 
-														username varchar(250),
-														isbn int,
+		username varchar(250),
+		isbn int,
 														
 														
-													);
+		);
 													
 													
-CREATE TABLE top5genres (
+CREATE TABLE topfivegenres (
 
-														username varchar (250),
-														genre_id int
+			username varchar (250),
+			genre varchar(30)
                             
                          );
                          
                          
-CREATE TABLE top5authors (
+CREATE TABLE topfiveauthors (
 
-														username varchar (250),
-														author_id int
+			username varchar (250),
+			author varchar(300)
                             
                          );
                          
@@ -48,7 +50,13 @@ CREATE TABLE top5authors (
                   
                  
 									
+CONSTRAINTS--
 
+alter table tenfavbooks add constraint crossref1 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
+
+alter table tenfavbooks add constraint crossref2 foreign key (username) references users(username) on delete cascade on update cascade;
+
+alter table topfiveauthors add constraint crossref3 foreign key(username) references users(username) on delete cascade on update cascade;
 
 
 
