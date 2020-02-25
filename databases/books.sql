@@ -2,7 +2,7 @@ CREATE TABLE books(
 											isbn int,
 											title varchar(250),
 											author varchar(300),
-											genre int,
+											genre varchar(30),
 											avg_rating float,
 											price float,
 											publisher varchar(300),
@@ -10,9 +10,11 @@ CREATE TABLE books(
 											ebook int,
 											audiobook int,
 											blurb varchar (500),
-											coverpage //need to figure out this part
+											coverpage need to figure out this part--
 											
-											primary key(isbn)
+											primary key(isbn),
+											
+											
 											
 										);
 										
@@ -21,7 +23,7 @@ CREATE TABLE books(
 CREATE TABLE book_reviews(
 	
 	isbn int,
-	username varchar(250),  ///
+	username varchar(250),
 	review varchar (5000)
 	
 	);
@@ -37,33 +39,20 @@ CREATE TABLE shelves(
 	
 	shelfid int,
 	isbn int,
-	status varchar(10),
+	status varchar(20),
 	user_rating float
 	
 	);
 	
 	
-	
+CONSTRAINTS--
 
-											
-											
-									
-											
-											Title
-Author
-ISBN
-Genre
-Avg Rating
-Price
-Publisher
-Paperback/Hardcover
-Year of publishing
-e-Book availability/audio book
-Websites on which they're available---
-Rating and reviews
-Blurb
-Status -> reading/read/want to read
-Cover->front and back
-						-want to read
-						-read
-						-reading 
+alter table books add constraint authorbook unique (author, title);
+
+alter table book_reviews add constraint crossref1 foreign key (username) references user(username) on delete cascade on update cascade;
+
+alter table book_reviews add constraint crossref2 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
+
+alter table book_websites add constraint crossref3 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
+
+alter table shelves add constraint crossref4 foriegn key (isbn) references books(isbn) on delete cascade on update cascade;
