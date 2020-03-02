@@ -58,21 +58,9 @@ alter table tenfavbooks add constraint crossref2 foreign key (username) referenc
 
 alter table topfiveauthors add constraint crossref3 foreign key(username) references users(username) on delete cascade on update cascade;
 
+alter table friends add constraint crossref4 foreign key(username) references users(username) on delete cascade on update cascade;
 
-
-
-
-											Users:
-Username
-Password
-Avg rating
-Shelves
-Top 10 fav books
-Top 5 genres --
-Top 5 favourite authors---
-Friends---
-Reviews---
-
+alter table friends add constraint crossref5 foreign key(friend) references users(username) on delete cascade on update cascade;
 											
 											
 		
