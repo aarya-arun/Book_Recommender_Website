@@ -1,6 +1,10 @@
 # Book_Recommender_Website
 Book recommendation and review website implementing content based and collaborative recommender systems
 
+Database used:
+
+1. Kaggle: goodbooks-10k dataset
+2. Genres: webscraping
 
 Pages:
 
