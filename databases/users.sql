@@ -3,6 +3,7 @@ CREATE TABLE user(
 											username varchar(250),
 											email_id varchar(250),
 											password varchar(40),
+											age int,
 											shelf_id int,
 											avg_rating int,
 											
@@ -12,6 +13,12 @@ CREATE TABLE user(
 											
 											
 									);
+									
+									
+CREATE TABLE user_ratings(
+	isbn int,
+	rating int
+	);
 									
 
 CREATE TABLE tenfavbooks (
@@ -37,6 +44,7 @@ CREATE TABLE topfiveauthors (
 			author varchar(300)
                             
                          );
+			 
                          
  
  CREATE TABLE friends(
@@ -47,6 +55,17 @@ CREATE TABLE topfiveauthors (
                   
                   
                   );
+		  
+		  
+CREATE TABLE have_read (
+	username varchar(250),
+	isbn int
+	);
+	
+CREATE TABLE want_to_read (
+	username varchar(250),
+	isbn int
+	);
                   
                  
 									
