@@ -1,0 +1,75 @@
+Site Landing page - 1
+
+- website picture
+- info about website
+-  USER LOGIN:
+
+  - username, password
+  - Not yet a user? Sign up!
+  
+ - login has to be either in the centre or right side
+ 
+ 
+
+USER SIGN-UP PAGE
+
+- unique thing is the email id
+- username includes only characters and numbers -- check availability, let this be unique too
+- password must be 10 characters long and have at least 1 number and 1 special character
+- user must be 13 years or older
+
+--->NPS<---
+
+- ten favourite books + rating (between 1-5) select --> have to pick  : click a next button: book profiles. 
+- five favourite authors checkboxes -->depending on number of unique values 
+- five favourite genres checkboxes
+
+- Already a user? Sign in!
+
+
+
+
+Homepage (after you login):
+
+- 1 search bar
+- Hi, User
+- Profile button -->profile page
+- Logout button --->Login page
+- Your friends button ---> Your friends list page
+- Shelves button --->Shelves page
+- 4 recommendation sections:
+          - Favourite books
+          - Favourite authors
+          - Favourite genres
+          - Friends
+          
+ - When you search for a book it takes you directly to the book's profile page: API style query.
+
+
+Shelves page:
+
+- 2 buttons: read/want to read
+- Read: Takes you to a page with list of books you've read : clicking on books takes it to book profile
+- WTR: Same as read
+
+
+User profiles page:
+
+- username
+- age
+- Favourite books, authors
+- "Add friend" if applicable 
+
+Your friends page:
+
+- List of friends: Clicking on friends takes you to friends profile page
+
+*ALL pages are to have a home button and a back button: Home button is homepage. Back button is prev page. 
+
+
+
+
+
+
+
+
