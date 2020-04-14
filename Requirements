@@ -1,4 +1,4 @@
-Site Landing page - 1
+Site Landing page - 1 //front end is done
 
 - website picture
 - info about website
@@ -11,14 +11,14 @@ Site Landing page - 1
  
  
 
-USER SIGN-UP PAGE
+USER SIGN-UP PAGE  //front end done
 
 - unique thing is the email id
 - username includes only characters and numbers -- check availability, let this be unique too
 - password must be 10 characters long and have at least 1 number and 1 special character
 - user must be 13 years or older
 
---->NPS<---
+--->NPS<---//nd
 
 - ten favourite books + rating (between 1-5) select --> have to pick  : click a next button: book profiles. 
 - five favourite authors checkboxes -->depending on number of unique values 
@@ -67,7 +67,15 @@ Your friends page:
 *ALL pages are to have a home button and a back button: Home button is homepage. Back button is prev page. 
 
 
-
+Book profiles page: 
+-Cover
+-Title
+-Author
+-Year
+-Rating
+-Description
+-Read/Want to Read
+-Option to rate the book
 
 
 
