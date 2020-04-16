@@ -1,0 +1,84 @@
+<mat-toolbar style=" background-image: url('./headerimage.png/'); height:620px; top:0%; position: absolute;  ">
+  
+  <mat-toolbar-row>
+    
+    <h1 style="color: whitesmoke; font-size:50px; top:10%; position:absolute">Bookworm Inc</h1>
+    
+    <span class="menu-spacer"></span>
+    
+    
+    
+    
+    <div style="color:whitesmoke; left:85%; top:7%; position:absolute;">
+
+      
+        <form style="top:35%; position: absolute; font-size:small" (ngSubmit)="onLogin(loginForm)" #loginForm="ngForm">
+			
+         <br>
+          
+          <mat-form-field style="right:115%; position: relative; height:20px; width: 140px;">
+          <input matInput type="text" name="username" #username="ngModel" ngModel  required placeholder="Username">
+          <br>
+          
+        </mat-form-field>
+
+          <mat-form-field style="right:105%; position: relative; height:20px; width: 140px;">
+          <input matInput type="password" name="password" #password="ngModel" ngModel  required placeholder="Password" >
+          </mat-form-field>
+          <button mat-raised-button color='primary' type="submit" style="right:67%; position: absolute;">Log In</button>
+         
+          <br>
+          <p style="right:115%; position: relative; height:20px; width: 140px; color:red">{{ invaliddisplay() }}</p>
+          
+        </form>
+   
+
+    </div>
+
+
+
+
+
+    <div style="color:whitesmoke; left:85%; top:27%; position:absolute;">
+
+      <form id="login" style="top:455%; position: relative; font-size:small">
+			
+        <p style="right:113%; position: relative; font-size:30px; color:tan">Create a new account:</p>
+        <br>
+        
+        
+        <input type= "email" name= "emailid" required placeholder="Email address" style="right:105%; position: relative; height:27px; width: 240px;">
+        <br><br>
+        <input type="text" name="username" required autofocus placeholder="Username" style="right:105%; position: relative; height:27px; width: 240px;">
+        <br><br>
+        <input type="password" name="pwd" required placeholder="Password" style="right:105%; position: relative; height:27px; width: 240px;">
+        <br><br>
+        <input type="number" id="age" name="age" required style="right:105%; position: relative; height:27px; width: 240px;"  placeholder="Age">
+        <br><br>
+        <button mat-raised-button color='accent' type="submit" style="right:149%; position: absolute; width: 100px">Sign Up</button>
+      
+  
+  
+      </form>
+    </div>
+  
+
+  
+
+
+    
+
+    
+    
+  </mat-toolbar-row>
+  <span style="font-size: 12px; top:15%; left: 12%; position:absolute; color:white; ">The next best thing to a library!</span>
+  </mat-toolbar>
+
+
+  <a>
+    <div style=" height: 85px; width: 100%;top:-1%; position:absolute; font-family:optima;">
+  <img align="center" src="./bookworminc.png/" style=" height:75%; top:85%; left: 26%; position: absolute;">
+    </div>
+</a>
+
+
