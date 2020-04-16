@@ -5,7 +5,7 @@ CREATE TABLE user(
 											password varchar(40),
 											age int,
 											shelf_id int,
-											avg_rating int,
+											
 											
 											primary key (username),
                                                                                         unique(email_id),
@@ -21,7 +21,7 @@ CREATE TABLE user_ratings(
 	);
 									
 
-CREATE TABLE tenfavbooks (
+CREATE TABLE topfifteenbooks (
 
 		username varchar(250),
 		isbn int,
@@ -36,15 +36,6 @@ CREATE TABLE topfivegenres (
 			genre varchar(30)
                             
                          );
-                         
-                         
-CREATE TABLE topfiveauthors (
-
-			username varchar (250),
-			author varchar(300)
-                            
-                         );
-			 
                          
  
  CREATE TABLE friends(
@@ -62,6 +53,7 @@ CREATE TABLE have_read (
 	isbn int
 	);
 	
+	
 CREATE TABLE want_to_read (
 	username varchar(250),
 	isbn int
@@ -71,15 +63,27 @@ CREATE TABLE want_to_read (
 									
 CONSTRAINTS--
 
-alter table tenfavbooks add constraint crossref1 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
+alter table topfifteenbooks add constraint crossref1 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
 
-alter table tenfavbooks add constraint crossref2 foreign key (username) references users(username) on delete cascade on update cascade;
+alter table topfifteenbooks add constraint crossref2 foreign key (username) references users(username) on delete cascade on update cascade;
 
-alter table topfiveauthors add constraint crossref3 foreign key(username) references users(username) on delete cascade on update cascade;
+alter table topfivegenres add constraint crossref3 foreign key(username) references users(username) on delete cascade on update cascade;
 
-alter table friends add constraint crossref4 foreign key(username) references users(username) on delete cascade on update cascade;
+alter table topfivegenres add constraint crossref4 foreign key (username) references users(username) on delete cascade on update cascade;
 
-alter table friends add constraint crossref5 foreign key(friend) references users(username) on delete cascade on update cascade;
+alter table friends add constraint crossref5 foreign key(username) references users(username) on delete cascade on update cascade;
+
+alter table friends add constraint crossref6 foreign key(friend) references users(username) on delete cascade on update cascade;
+
+alter table user_ratings add constraint crossref7 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
+
+alter table user_ratings add constraint crossref8 foreign key(username) references users(username) on delete cascade on update cascade;
 											
-											
-		
+alter table want_to_read add constraint crossref9 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
+
+alter table want_to_read add constraint crossref10 foreign key(username) references users(username) on delete cascade on update cascade;
+																					
+alter table have_read add constraint crossref11 foreign key (isbn) references books(isbn) on delete cascade on update cascade;
+
+alter table have_red add constraint crossref12 foreign key(username) references users(username) on delete cascade on update cascade;
+													
