@@ -4,30 +4,27 @@
       <span class="menu-spacer"></span>
     
     
-      <a>
+      
         <div style=" height: 85px; width: 100%;top:-1%; position:absolute; font-family:optima;">
       <img align="center" src="./bookworminc.png/" style=" height:50%; top:15%; left: 14%; position: absolute;">
       
       
         </div>
-     </a>
+     
 
-     <a>
-        <div style=" height: 85px; width: 100%;top:-1%; position:absolute; font-family:optima;">
-        <img align="center" src="./images/homeicon.png" style=" height:40%; top:25%; right: 27%; position: absolute;">
-        </div>
-     </a>
+    
 
-     <div style=" height: 85px; width: 100%;top:-1%; position:absolute; font-family:optima;">
+      <button mat-raised-button color="primary" (click)="goHome()" style="top:2%; right: 24%; position: absolute;">Home</button>
+     
 
         
         <mat-chip-list>
-            <mat-chip  style="top:22%; right:13%; position:absolute;">Hi, Hanumani Ji</mat-chip>
+            <mat-chip  style=" top:2%; right: 12%; position: absolute; font-family: optima;">Hi, {{username}}</mat-chip>
         </mat-chip-list>
         
-    </div>
+  
 
-    <button mat-raised-button color='accent' style=" height:45px; width:75px; top:2%; right:3%; position: absolute;">Log Out</button>
+    <button mat-raised-button [routerLink]="''" color='accent' style="top:2%; right:5%; position: absolute;">Log Out</button>
      
     
 

@@ -25,6 +25,7 @@
           <mat-form-field style="right:105%; position: relative; height:20px; width: 140px;">
           <input matInput type="password" name="password" #password="ngModel" ngModel  required placeholder="Password" >
           </mat-form-field>
+
           <button mat-raised-button color='primary' type="submit" style="right:67%; position: absolute;">Log In</button>
          
           <br>
@@ -39,23 +40,37 @@
 
 
 
-    <div style="color:whitesmoke; left:85%; top:27%; position:absolute;">
+    <div style="color:white; left:90%; top:27%; position:absolute;">
 
-      <form id="login" style="top:455%; position: relative; font-size:small">
+      <form id="login" style="top:455%; position: relative; font-size:medium" (ngSubmit)="onSignUp(signUpForm)" #signUpForm="ngForm">
 			
         <p style="right:113%; position: relative; font-size:30px; color:tan">Create a new account:</p>
         <br>
         
+        <mat-form-field  style="right:135%; position: absolute;">
+        <input matInput type= "email" name= "emailid" #emailid="ngModel" ngModel required placeholder="Email address">
+        </mat-form-field>
         
-        <input type= "email" name= "emailid" required placeholder="Email address" style="right:105%; position: relative; height:27px; width: 240px;">
         <br><br>
-        <input type="text" name="username" required autofocus placeholder="Username" style="right:105%; position: relative; height:27px; width: 240px;">
+
+        <mat-form-field  style="right:135%; position: absolute;">
+        <input matInput type="text" name="username" #username="ngModel" ngModel required placeholder="Username">
+        </mat-form-field>
+
         <br><br>
-        <input type="password" name="pwd" required placeholder="Password" style="right:105%; position: relative; height:27px; width: 240px;">
+
+        <mat-form-field  style="right:135%; position: absolute;">
+        <input matInput type="password" name="password" #password="ngModel" ngModel required placeholder="Password">
+        </mat-form-field>
+
         <br><br>
-        <input type="number" id="age" name="age" required style="right:105%; position: relative; height:27px; width: 240px;"  placeholder="Age">
+
+        <mat-form-field  style="right:135%; position: absolute;">
+        <input matInput type="number" id="age" name="age" required placeholder="Age">
+        </mat-form-field>
+        
         <br><br>
-        <button mat-raised-button color='accent' type="submit" style="right:149%; position: absolute; width: 100px">Sign Up</button>
+        <button  mat-raised-button color='accent' type="submit" style="right:149%; position: absolute; width: 100px">Sign Up</button>
       
   
   

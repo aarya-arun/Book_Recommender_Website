@@ -10,6 +10,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import {MatRippleModule} from '@angular/material/core';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatTabsModule} from '@angular/material/tabs';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -18,6 +20,12 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SelectBookNewComponent } from './select-book-new/select-book-new.component';
 import { SelectGenreNewComponent } from './select-genre-new/select-genre-new.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ShelvesComponent } from './book-shelves/shelves.component';
+import { FriendsComponent } from './friends/friends.component';
+import { BookProfileComponent } from './book-profile/book-profile.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+
 
 
 
@@ -31,10 +39,17 @@ import { SelectGenreNewComponent } from './select-genre-new/select-genre-new.com
     HeaderLComponent,
     FooterComponent,
     SelectBookNewComponent,
-    SelectGenreNewComponent
+    SelectGenreNewComponent,
+    HomepageComponent,
+    ShelvesComponent,
+    FriendsComponent,
+    BookProfileComponent,
+    UserProfileComponent
+   
 
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     CommonModule,
@@ -46,7 +61,8 @@ import { SelectGenreNewComponent } from './select-genre-new/select-genre-new.com
     MatToolbarModule,
     MatExpansionModule,
     MatRippleModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTabsModule
 
   ],
   providers: [],
