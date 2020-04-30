@@ -1,6 +1,13 @@
-# Bookworminc
+# Bookworm Inc
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This repository contains the code of Bookworm Inc, a book recommender website that includes the functionalities of creating new accounts and authentication, book shelves, and book recommendations using content based and collaborative filtering. 
+
+## Technologies:
+
+This project was generated with 
+* [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+* Flask
+* CSS
 
 ## Development server
 
@@ -12,7 +19,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+Run `ng serve` to start the server before building the project. 
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+*For the databases, the csv booksfinal.csv was imported into the books database*
 
 ## Running unit tests
 
