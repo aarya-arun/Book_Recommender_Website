@@ -1,6 +1,5 @@
-CREATE TABLE books(
-	
-  isbn int,
+CREATE TABLE books(	
+  isbn varchar(20),
   authors varchar(200),
   original_publication_year int,
   original_title varchar (500),
@@ -16,5 +15,4 @@ CREATE TABLE books(
   genres varchar(50),
   genresmatch varchar(50),
   primary key(isbn)
-	
 );
