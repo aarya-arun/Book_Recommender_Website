@@ -1,4 +1,4 @@
-CREATE TABLE user(
+CREATE TABLE users(
 
 											username varchar(250),
 											email_id varchar(250),
@@ -16,6 +16,7 @@ CREATE TABLE user(
 									
 									
 CREATE TABLE user_ratings(
+	username varchar(250),
 	isbn int,
 	rating int
 	);
