@@ -1,10 +1,10 @@
 CREATE TABLE users(username varchar(250),email_id varchar(250),password1 varchar(40),age int,shelf_id int,primary key (username),unique(email_id), unique(shelf_id));
 									
 									
-CREATE TABLE user_ratings(username varchar(250),isbn int,rating int );
+CREATE TABLE user_ratings(username varchar(250),isbn varchar(20),rating int );
 									
 
-CREATE TABLE topfifteenbooks (username varchar(250),isbn int);
+CREATE TABLE topfifteenbooks (username varchar(250),isbn varchar(20));
 													
 													
 CREATE TABLE topfivegenres (username varchar (250),genre varchar(30));
@@ -13,10 +13,10 @@ CREATE TABLE topfivegenres (username varchar (250),genre varchar(30));
  CREATE TABLE friends( username varchar(250),friend varchar(250), similarity_index float);
 		  
 		  
-CREATE TABLE have_read (username varchar(250),isbn int);
+CREATE TABLE have_read (username varchar(250),isbn varchar(20));
 	
 	
-CREATE TABLE want_to_read (username varchar(250),isbn int);
+CREATE TABLE want_to_read (username varchar(250),isbn varchar(20));
                   
                  
 									
