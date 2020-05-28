@@ -14,6 +14,7 @@ CREATE TABLE books(
   titlesmatch varchar(500),
   book_desc varchar(5000),
   genres varchar(50),
-  genresmatch varchar(50)
+  genresmatch varchar(50),
+  primary key(isbn)
 	
 );
