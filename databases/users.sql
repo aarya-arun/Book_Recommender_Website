@@ -18,6 +18,8 @@ CREATE TABLE have_read (username varchar(250),isbn varchar(20));
 	
 CREATE TABLE want_to_read (username varchar(250),isbn varchar(20));
                   
+
+CREATE TABLE shelfid( shelfidstart int);
                  
 									
 CONSTRAINTS--
