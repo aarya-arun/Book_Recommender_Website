@@ -1,0 +1,291 @@
+<app-header-l></app-header-l>
+
+<br>
+
+
+<br><br>
+<h1 align="center" style="font-family: optima;">Welcome to your homepage, {{username}}</h1>
+<br><br>
+
+
+
+<!--<div class="recommendation" style="top: 35%; left: 5%; position: absolute">-->
+    <h2 style="left: 5%; position: absolute; font-family: optima;">Here are some recommendations for you:</h2>
+
+    <br><br><br><br>
+
+
+    
+
+<mat-tab-group dynamicHeight style="width: 80%;">
+   <mat-tab label="Based on books that you liked:" style="font-family: optima;">
+    
+      <p>
+         <br><br><br>
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(0)" style=" height:145px; left: 4%; position: absolute" src={{top15[0][1]}} style="height:145px; width:105px;"> 
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(1)" style="left: 15%; position: absolute" src={{top15[1][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(2)" style=" height:145px; left: 25%; position: absolute" src={{top15[2][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(3)" style=" left: 35%; position: absolute" src={{top15[3][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(4)" style="left: 45%; position: absolute" src={{top15[4][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(5)" style=" height:145px; left: 55%; position: absolute" src={{top15[5][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(6)" style="left: 65%; position: absolute" src={{top15[6][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(7)" style=" height:145px; left: 75%; position: absolute" src={{top15[7][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(8)" style=" left: 85%; position: absolute" src={{top15[8][1]}} style="height:145px; width:105px;">
+
+         <br><br><br><br><br><br><br><br><br><br>
+
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(9)" style=" height:145px; left: 4%; position: absolute" src={{top15[9][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(10)" style="left: 15%; position: absolute" src={{top15[10][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(11)" style=" height:145px; left: 25%; position: absolute" src={{top15[11][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(12)" style=" left: 35%; position: absolute" src={{top15[12][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(13)" style="left: 45%; position: absolute" src={{top15[13][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(14)" style=" height:145px; left: 55%; position: absolute" src={{top15[14][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(15)" style="left: 65%; position: absolute" src={{top15[15][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(16)" style=" height:145px; left: 75%; position: absolute" src={{top15[16][1]} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(17)" style=" left: 85%; position: absolute" src={{top15[17][1]}} style="height:145px; width:105px;">
+
+         <br><br><br><br><br><br><br><br><br><br>
+
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(18)" style=" height:145px; left: 4%; position: absolute" src={{top15[18][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(19)" style="left: 15%; position: absolute" src={{top15[19][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(20)" style=" height:145px; left: 25%; position: absolute" src={{top15[20][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(21)" style=" left: 35%; position: absolute" src={{top15[21][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(22)" style="left: 45%; position: absolute" src={{top15[22][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(23)" style=" height:145px; left: 55%; position: absolute" src={{top15[23][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(24)" style="left: 65%; position: absolute" src={{top15[24][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(25)" style=" height:145px; left: 75%; position: absolute" src={{top15[25][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(26)" style=" left: 85%; position: absolute" src={{top15[26][1]}} style="height:145px; width:105px;">
+
+         <br><br><br><br><br><br><br><br><br><br>
+
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(27)" style=" height:145px; left: 4%; position: absolute" src={{top15[27][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(28)" style="left: 15%; position: absolute" src={{top15[28][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(29)" style=" height:145px; left: 25%; position: absolute" src={{top15[29][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(30)" style=" left: 35%; position: absolute" src={{top15[30][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(31)" style="left: 45%; position: absolute" src={{top15[31][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(32)" style=" height:145px; left: 55%; position: absolute" src={{top15[32][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(33)" style="left: 65%; position: absolute" src={{top15[33][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(34)" style=" height:145px; left: 75%; position: absolute" src={{top15[34][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(35)" style=" left: 85%; position: absolute" src={{top15[35][1]}} style="height:145px; width:105px;">
+
+
+         <br><br><br><br><br><br><br><br><br><br>
+
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(36)" style=" height:145px; left: 4%; position: absolute" src={{top15[36][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(37)" style="left: 15%; position: absolute" src={{top15[37][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(38)" style=" height:145px; left: 25%; position: absolute" src={{top15[38][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(39)" style=" left: 35%; position: absolute" src={{top15[39][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(40)" style="left: 45%; position: absolute" src={{top15[40][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(41)" style=" height:145px; left: 55%; position: absolute" src={{top15[41][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(42)" style="left: 65%; position: absolute" src={{top15[42][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(43)" style=" height:145px; left: 75%; position: absolute" src={{top15[43][1]}} style="height:145px; width:105px;">
+         <img [routerLink] = "'/l/h/b'" (click)="getbookdetails(44)" style=" left: 85%; position: absolute" src={{top15[44][1]}} style="height:145px; width:105px;">
+
+
+         <br><br><br><br><br><br><br><br><br><br>
+
+       
+ 
+ 
+         </p>
+ 
+    
+      
+      
+    <!--</div>-->
+     
+     </mat-tab>
+
+
+       
+       <mat-tab label="Based on the genres you picked:" style="font-family: optima;">
+    
+  
+    
+         <p>
+         <br><br><br>
+         <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(0)" style=" height:145px; left: 4%; position: absolute" src={{top5[0][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(1)" style="left: 15%; position: absolute" src={{top5[1][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(2)" style=" height:145px; left: 25%; position: absolute" src={{top5[2][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(3)" style=" left: 35%; position: absolute" src={{top5[3][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(4)" style="left: 45%; position: absolute" src={{top5[4][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(5)" style=" height:145px; left: 55%; position: absolute" src={{top5[5][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(6)" style="left: 65%; position: absolute" src={{top5[6][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(7)" style=" height:145px; left: 75%; position: absolute" src={{top5[7][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(8)" style=" left: 85%; position: absolute" src={{top5[8][1]}} style="height:145px; width:105px;">
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(9)" style=" height:145px; left: 4%; position: absolute" src={{top5[9][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(10)" style="left: 15%; position: absolute" src={{top5[10][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(11)" style=" height:145px; left: 25%; position: absolute" src={{top5[11][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(12)" style=" left: 35%; position: absolute" src={{top5[12][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(13)" style="left: 45%; position: absolute" src={{top5[13][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(14)" style=" height:145px; left: 55%; position: absolute" src={{top5[14][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(15)" style="left: 65%; position: absolute" src={{top5[15][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(16)" style=" height:145px; left: 75%; position: absolute" src={{top5[16][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(17)" style=" left: 85%; position: absolute" src={{top5[17][1]}} style="height:145px; width:105px;">
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(18)" style=" height:145px; left: 4%; position: absolute" src={{top5[18][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(19)" style="left: 15%; position: absolute" src={{top5[19][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(20)" style=" height:145px; left: 25%; position: absolute" src={{top5[20][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(21)" style=" left: 35%; position: absolute" src={{top5[21][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(22)" style="left: 45%; position: absolute" src={{top5[22][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(23)" style=" height:145px; left: 55%; position: absolute" src={{top5[23][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(24)" style="left: 65%; position: absolute" src={{top5[24][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(25)" style=" height:145px; left: 75%; position: absolute" src={{top5[25][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(26)" style=" left: 85%; position: absolute" src={{top5[26][1]}} style="height:145px; width:105px;">
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(27)" style=" height:145px; left: 4%; position: absolute" src={{top5[27][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(28)" style="left: 15%; position: absolute" src={{top5[28][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(29)" style=" height:145px; left: 25%; position: absolute" src={{top5[29][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(30)" style=" left: 35%; position: absolute" src={{top5[30][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(31)" style="left: 45%; position: absolute" src={{top5[31][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(32)" style=" height:145px; left: 55%; position: absolute" src={{top5[32][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(33)" style="left: 65%; position: absolute" src={{top5[33][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(34)" style=" height:145px; left: 75%; position: absolute" src={{top5[34][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(35)" style=" left: 85%; position: absolute" src={{top5[35][1]}} style="height:145px; width:105px;">
+
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(36)" style=" height:145px; left: 4%; position: absolute" src={{top5[36][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(37)" style="left: 15%; position: absolute" src={{top5[37][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(38)" style=" height:145px; left: 25%; position: absolute" src={{top5[38][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(39)" style=" left: 35%; position: absolute" src={{top5[39][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(40)" style="left: 45%; position: absolute" src={{top5[40][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(41)" style=" height:145px; left: 55%; position: absolute" src={{top5[41][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(42)" style="left: 65%; position: absolute" src={{top5[42][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(43)" style=" height:145px; left: 75%; position: absolute" src={{top5[43][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getgenredetails(44)" style=" left: 85%; position: absolute" src={{top5[44][1]}} style="height:145px; width:105px;">
+
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+        </p>
+ 
+ 
+         
+       <!--</div>-->
+        
+        </mat-tab>
+
+       
+   
+
+
+
+       <mat-tab label="What's popular:" style="font-family: optima;">
+
+         <p style="font-style:optima;">
+            <br><br><br>
+            <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(0)" style=" height:145px; left: 4%; position: absolute" src={{popular[0][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(1)" style="left: 15%; position: absolute" src={{popular[1][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(2)" style=" height:145px; left: 25%; position: absolute" src={{popular[2][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(3)" style=" left: 35%; position: absolute" src={{popular[3][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(4)" style="left: 45%; position: absolute" src={{popular[4][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(5)" style=" height:145px; left: 55%; position: absolute" src={{popular[5][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(6)" style="left: 65%; position: absolute" src={{popular[6][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(7)" style=" height:145px; left: 75%; position: absolute" src={{popular[7][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(8)" style=" left: 85%; position: absolute" src={{popular[8][1]}} style="height:145px; width:105px;">
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(9)" style=" height:145px; left: 4%; position: absolute" src={{popular[9][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(10)" style="left: 15%; position: absolute" src={{popular[10][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(11)" style=" height:145px; left: 25%; position: absolute" src={{popular[11][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(12)" style=" left: 35%; position: absolute" src={{popular[12][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(13)" style="left: 45%; position: absolute" src={{popular[13][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(14)" style=" height:145px; left: 55%; position: absolute" src={{popular[14][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(15)" style="left: 65%; position: absolute" src={{popular[15][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(16)" style=" height:145px; left: 75%; position: absolute" src={{popular[16][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(17)" style=" left: 85%; position: absolute" src={{popular[17][1]}} style="height:145px; width:105px;">
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(18)" style=" height:145px; left: 4%; position: absolute" src={{popular[18][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(19)" style="left: 15%; position: absolute" src={{popular[19][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(20)" style=" height:145px; left: 25%; position: absolute" src={{popular[20][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(21)" style=" left: 35%; position: absolute" src={{popular[21][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(22)" style="left: 45%; position: absolute" src={{popular[22][1]}} style="height:145px; width:105px;"> 
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(23)" style=" height:145px; left: 55%; position: absolute" src={{popular[23][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(24)" style="left: 65%; position: absolute" src={{popular[24][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(25)" style=" height:145px; left: 75%; position: absolute" src={{popular[25][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(26)" style=" left: 85%; position: absolute" src={{popular[26][1]}} style="height:145px; width:105px;">
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(27)" style=" height:145px; left: 4%; position: absolute" src={{popular[27][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(28)" style="left: 15%; position: absolute" src={{popular[28][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(29)" style=" height:145px; left: 25%; position: absolute" src={{popular[29][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(30)" style=" left: 35%; position: absolute" src={{popular[30][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(31)" style="left: 45%; position: absolute" src={{popular[31][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(32)" style=" height:145px; left: 55%; position: absolute" src={{popular[32][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(33)" style="left: 65%; position: absolute" src={{popular[6][33]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(34)" style=" height:145px; left: 75%; position: absolute" src={{popular[34][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(35)" style=" left: 85%; position: absolute" src={{popular[35][1]}} style="height:145px; width:105px;">
+
+
+           <br><br><br><br><br><br><br><br><br><br>
+
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(36)" style=" height:145px; left: 4%; position: absolute" src={{popular[36][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(37)" style="left: 15%; position: absolute" src={{popular[37][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(38)" style=" height:145px; left: 25%; position: absolute" src={{popular[38][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(39)" style=" left: 35%; position: absolute" src={{popular[39][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(40)" style="left: 45%; position: absolute" src={{popular[40][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(41)" style=" height:145px; left: 55%; position: absolute" src={{popular[41][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(42)" style="left: 65%; position: absolute" src={{popular[42][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(43)" style=" height:145px; left: 75%; position: absolute" src={{popular[43][1]}} style="height:145px; width:105px;">
+           <img [routerLink] = "'/l/h/b'" (click)="getpopulardetails(44)" style=" left: 85%; position: absolute" src={{popular[44][1]}} style="height:145px; width:105px;">
+
+
+           <br><br><br><br><br><br><br><br><br><br>
+            
+               
+            
+      
+      
+            </p>
+      
+    
+  
+    
+        
+
+        
+      <!--</div>-->
+       
+       </mat-tab>
+
+    </mat-tab-group>
+
+    <div  style="border-left: 5px solid black;
+    height: 700px;
+    width: 800px;
+    position: absolute;
+    left: 80%;
+    margin-left: -3px;
+    top: 9%;
+    background-color:lavender;"></div>
+
+    
+    <button type="button" id="shelves" [routerLink] = "'/l/shelves'" mat-raised-button color="accent" style="top: 52%; left: 85%;  position: absolute; height: 85px; width: 150px;">Your Books</button>
+    
+    <button type="button" id="shelves" [routerLink] = "'/l/userprofile'" mat-raised-button color="accent" style="top: 72%; left: 85%;  position: absolute; height: 85px; width: 150px;">Your Profile</button>
+
+    
+    
+
+
+
+    
+        
+
+      

@@ -1,0 +1,16 @@
+<app-header-l></app-header-l>
+
+<img src={{image}} width="200px" height="280px" style="top:17%;left:1%;position:absolute">
+<h1 style="top:17%;left:18%;display:inline;position:absolute; font-family:optima;"><b>{{booktitle}}</b></h1>
+<h2 style="top:22%;left:18%;position:absolute; font-family:optima;">by {{author}}</h2>
+<mat-chip-list>
+<h5 style="top:28%;left:18%;position:absolute; font-family:optima;"><mat-chip>{{publishdate}}</mat-chip></h5>
+<h5 style="top:28%;left:23%;position:absolute; font-family:optima;"><mat-chip>{{ratingcount}} ratings</mat-chip></h5>
+<h5 style="top:28%;left:33%;position:absolute; font-family:optima;"><mat-chip>Average Rating: {{rating}}</mat-chip></h5>
+</mat-chip-list>
+
+
+<button type="button" id="read-more" (click)="readMore()" mat-raised-button color="accent" style="top: 37%; left: 18%; display: inline; position: absolute">Read more</button>
+<p align="justify" style="top: 47%; left: 18%; right: 2%; font-size: 16px; text-align: justify; display: inline; position: absolute">{{partialdesc}}<span id="dots">...</span><span id="more" style="display: none">{{restofdesc}}</span></p><br>
+<button type="button" mat-raised-button color="accent" (click)="haveread()" style="top: 69%; left: 1%; display: inline; position: absolute"> Read </button>
+<button type="button" mat-raised-button color="accent" (click)="wannaread()" style="top: 69%; left: 7%; display: inline; position: absolute"> Want to read</button>

@@ -1,0 +1,20 @@
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 20px;
+    max-height:400px;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+li a {
+    background: #999;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li a:hover {
+    background: #555;
+}
