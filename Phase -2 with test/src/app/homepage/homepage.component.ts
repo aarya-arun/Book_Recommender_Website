@@ -40,7 +40,7 @@ export class HomepageComponent implements OnInit{
 
     console.log(this.popular);
 
-   
+
   }
 
 
@@ -100,8 +100,8 @@ export class HomepageComponent implements OnInit{
                     rating: number,
                     ratingcount: number,
                     title: string,
-                    year: number}>('http://localhost:5000/api/books/"' + isbn+'"').subscribe((nerespdata) => {
-            
+                    year: number}>('http://localhost:5000/api/books/"' + isbn + '"').subscribe((nerespdata) => {
+
                                            this.bookService.putisbn(isbn);
                                            this.bookService.putbooktitle(nerespdata.title);
                                            this.bookService.putauthor(nerespdata.authors);
@@ -110,7 +110,7 @@ export class HomepageComponent implements OnInit{
                                            this.bookService.putrating(nerespdata.rating);
                                            this.bookService.putdesc(nerespdata.description);
                                            this.bookService.putimage(nerespdata.imageurl);
-            
+
                                            this.router.navigate(['/l/bookprofile']);
 
 
@@ -123,7 +123,7 @@ export class HomepageComponent implements OnInit{
                       {
 
                           const isbn = this.top15[p][0];
-                          console.log(isbn)
+                          console.log(isbn);
 
                           this.http.get<{authors: string,
         description: string,
@@ -131,7 +131,7 @@ export class HomepageComponent implements OnInit{
         rating: number,
         ratingcount: number,
         title: string,
-        year: number}>('http://localhost:5000/api/books/"' + isbn+'"').subscribe((nerespdata) => {
+        year: number}>('http://localhost:5000/api/books/"' + isbn + '"').subscribe((nerespdata) => {
 
                                this.bookService.putisbn(isbn);
                                this.bookService.putbooktitle(nerespdata.title);
@@ -145,8 +145,8 @@ export class HomepageComponent implements OnInit{
                                this.router.navigate(['/l/bookprofile']);
 
 
-                        
-                      
+
+
 
 
                          });
@@ -164,8 +164,8 @@ export class HomepageComponent implements OnInit{
                       rating: number,
                       ratingcount: number,
                       title: string,
-                      year: number}>('http://localhost:5000/api/books/"' + isbn+'"').subscribe((nerespdata) => {
-              
+                      year: number}>('http://localhost:5000/api/books/"' + isbn + '"').subscribe((nerespdata) => {
+
                                              this.bookService.putisbn(isbn);
                                              this.bookService.putbooktitle(nerespdata.title);
                                              this.bookService.putauthor(nerespdata.authors);
@@ -174,10 +174,10 @@ export class HomepageComponent implements OnInit{
                                              this.bookService.putrating(nerespdata.rating);
                                              this.bookService.putdesc(nerespdata.description);
                                              this.bookService.putimage(nerespdata.imageurl);
-              
+
                                              this.router.navigate(['/l/bookprofile']);
 
-                        
+
 
 
 

@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import { UserService } from '../user.service';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DelDialogueComponent } from '../del-dialogue/del-dialogue.component';
 
 
 @Component({
@@ -13,11 +15,11 @@ import { Router } from '@angular/router';
 
 export class UserProfileComponent implements OnInit{
 
-  constructor(public userService: UserService, private router: Router, private http: HttpClient) {}
+  constructor(public userService: UserService, public dialog: MatDialog, private router: Router, private http: HttpClient) {}
 
-  deluserdata ={};
+  deluserdata = {};
 
-  paella ='';
+  paella = '';
 
   username = '';
   age = -1;
@@ -30,14 +32,25 @@ export class UserProfileComponent implements OnInit{
     this.emailid = this.userService.getemailid();
   }
 
+  openDialog(){
+    const dialogRef = this.dialog.open(DelDialogueComponent, {
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+
+
+    });
+  }
+
 
   farfetched(){
 
     this.paella = this.userService.getusername();
-    this.deluserdata ={
+    this.deluserdata = {
 
+      // tslint:disable-next-line: object-literal-key-quotes
       'username': this.paella
-    }
+    };
 
 
     this.http.post<{message: string}>('http://localhost:5000/api/deluser', this.deluserdata).subscribe((respdata) => {

@@ -12,6 +12,7 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -26,6 +27,8 @@ import { FriendsComponent } from './friends/friends.component';
 import { BookProfileComponent } from './book-profile/book-profile.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { RssComponent } from './rss/rss.component';
+import { DelDialogueComponent } from './del-dialogue/del-dialogue.component';
+
 
 
 
@@ -45,7 +48,9 @@ import { RssComponent } from './rss/rss.component';
     FriendsComponent,
     BookProfileComponent,
     UserProfileComponent,
-    RssComponent
+    RssComponent,
+    DelDialogueComponent
+
 
 
   ],
@@ -64,6 +69,7 @@ import { RssComponent } from './rss/rss.component';
     MatRippleModule,
     MatChipsModule,
     MatTabsModule,
+    MatDialogModule
 
 
   ],

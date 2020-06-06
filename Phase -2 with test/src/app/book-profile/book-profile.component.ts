@@ -28,9 +28,9 @@ export class BookProfileComponent implements OnInit{
     image = '';
     username = '';
     kahuna = {};
-    partialdesc ='';
+    partialdesc = '';
     restofdesc = '';
-    len =0;
+    len = 0;
 
 
     ngOnInit(){
@@ -46,8 +46,8 @@ export class BookProfileComponent implements OnInit{
       this.username = this.userservice.getusername();
       this.len = this.desc.length;
 
-      this.partialdesc = this.desc.substring(0,75);
-      this.restofdesc = this.desc.substring(75,this.len);
+      this.partialdesc = this.desc.substring(0, 75);
+      this.restofdesc = this.desc.substring(75, this.len);
 
       console.log(this.desc);
     }
@@ -63,7 +63,9 @@ export class BookProfileComponent implements OnInit{
 
       this.kahuna = {
 
+        // tslint:disable-next-line: object-literal-key-quotes
         'isbn': this.isbn,
+        // tslint:disable-next-line: object-literal-key-quotes
         'username': this.username
 
       };
@@ -82,7 +84,9 @@ haveread()
 
       this.kahuna = {
 
+        // tslint:disable-next-line: object-literal-key-quotes
         'isbn': this.isbn,
+        // tslint:disable-next-line: object-literal-key-quotes
         'username': this.username
 
       };

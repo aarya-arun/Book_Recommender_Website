@@ -91,10 +91,10 @@ export class HeaderComponent{
             this.userService.puttopfifteen();
             this.userService.puttopfive();
             this.userService.putpopular();
-            
 
 
-              
+
+
             this.router.navigate(['/l/userprofile']);
 
 

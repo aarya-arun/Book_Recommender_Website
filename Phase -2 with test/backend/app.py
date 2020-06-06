@@ -90,7 +90,8 @@ def userdetailslist(uname):
         "password": 'lol',
         "emailid": 'lol',
         "age": -1,
-        "shelfid": -1
+        "shelfid": -1,
+        "message": "This user doesn't exist."
 
         }
         return jsonify(resp)
@@ -199,7 +200,7 @@ def deletingauser():
     existinguser = cur.fetchone()
 
     if existinguser == None:
-        return { "message": "This user doesn't exist."}
+        return jsonify({ "message": "This user doesn't exist."})
 
     
     cur.execute("DELETE FROM users where username='"+username+"'")
@@ -237,7 +238,7 @@ def bookdetailslist(isbn):
     row = cur.fetchone()
        # return jsonify(row)
     if(row==None):
-        return "This book doesn't exist",204
+        return jsonify({ "message": "This book doesn't exist"})
 
      
     resp={
@@ -291,7 +292,7 @@ def shelfdetails():
     row = cur.fetchone()
     
     if(row==None):
-        return "This user doesn't exist",204
+        return jsonify({ "message": "This user doesn't exist"})
 
 
     
@@ -380,7 +381,7 @@ def topfifteenadding():
     row = cur.fetchone()
     
     if(row==None):
-        return "This user doesn't exist",204
+        return jsonify({"message": "This user doesn't exist"})
 
 
     
@@ -448,7 +449,7 @@ def topfiveadding():
     row = cur.fetchone()
     
     if(row==None):
-        return "This user doesn't exist",204
+        return jsonify({ "message": "This user doesn't exist"})
 
 
     
