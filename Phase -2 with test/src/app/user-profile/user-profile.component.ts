@@ -73,4 +73,38 @@ export class UserProfileComponent implements OnInit{
   }
 
 
+
+  cabo()
+  {
+    this.paella = this.userService.getusername();
+
+    const tamale = {
+
+      // tslint:disable-next-line: quotemark
+      // tslint:disable-next-line: object-literal-key-quotes
+      'username': this.paella
+    };
+
+
+    this.http.post<{message: string}>('http://localhost:5000/api/books/updaterecs', tamale).subscribe((respdata) => {
+
+    if (respdata.message.localeCompare('All good.') !== 0)
+    {
+
+        console.log('Never gonna happen');
+      }
+      else
+      {
+
+        this.router.navigate(['/l/f/b']);
+
+     }
+
+
+
+});
+  }
+
+
+
 }

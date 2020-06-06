@@ -880,6 +880,38 @@ def haveread():
     
     return jsonify({"message":"All good."}),200
 
+
+
+
+
+#Update Recommendations
+@cross_origin(origin='*')
+@app.route('/api/books/updaterecs', methods=['POST'])
+def updaterecs():
+
+    connection = mysql.get_db()
+    cur = mysql.get_db().cursor()
+    usn=request.json.get('username')
+    cur.execute("SELECT * FROM users where username='"+usn+"'")
+    row = cur.fetchone()
+       # return jsonify(row)
+    if(row==None):
+        resp={ 
+        "message": "This user doesn't exist."
+
+        }
+        return jsonify(resp)
+
+    isbn = request.json.get('isbn')
+
+    cur.execute("DELETE from topfifteenbooks where username ='"+usn+"'")
+    cur.execute("DELETE from topfivegenres where username ='"+usn+"'")
+    cur.execute("DELETE from bookrecs where username ='"+usn+"'")
+    cur.execute("DELETE from genrerecs where username ='"+usn+"'")
+    connection.commit()
+    
+    return jsonify({"message":"All good."}),200
+
     
 
 
